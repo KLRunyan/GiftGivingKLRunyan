@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1 {color:blue; font-family: verdana; font-size: 180%; margin: 0px; text-align: center;}
+p {color: blue; font-family: verdana; font-size: 140%; margin: 5px;}   
+ul {list-style: none}
+li::before {content: "*  "; color: navy; font-size: 30px;}
+a:link {
+    color: purple; font-family: verdana; font-size: 125%; font-weight: bold;}
+/* visited link */
+a:visited {
+    color: purple;}
+/* mouse over link */
+a:hover {
+    color: red;}
+/* selected link */
+a:active {
+    color: yellow;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Gift Giving</title>
+</head>
+<body>
+	<h1>Gift Giving Database</h1>
+	<br />
+	<p> Welcome to my gift database.  Please choose from the options below: </p>
+	<ul>
+	<li><a href="addPersonalGift.html">Add a new personal gift</a></li>
+	<li><a href="addCharitableGift.html">Add a new charitable gift</a></li>
+	<li><a href="viewAllPGiftsServlet">View all personal gifts</a></li>
+	<li><a href="viewAllCGiftsServlet">View all charitable gifts</a></li>
+	<li><a href="viewAllPRecipientsServlet">View all person recipients</a></li>
+	<li><a href="viewAllCRecipientsServlet">View all charity recipients</a></li>
+	</ul>
+	<img src="a-week-of-gifts.jpg">
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: powderblue;
+}
+
+h1 {
+	color: blue;
+	font-family: verdana;
+	font-size: 190%;
+	margin: 20px;
+	text-align: center;
+}
+
+h3 {
+	color: blue;
+	font-family: verdana;
+	font-size: 140%;
+	margin: 5px 5px 5px 0px;
+	text-align: left;
+}
+
+p {
+	color: blue;
+	font-family: verdana;
+	font-size: 140%;
+	margin: 5px;
+}
+
+input[type=submit] {
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 21px;
+	background-color: #F36C8C;
+	font-weight: bold;
+	text-shadow: 1px 1px #F36C8C;
+	color: #ffffff;
+	margin: 15px 15px 15px 55px;
+}
+
+a:link {
+	color: purple;
+	font-family: verdana;
+	font-size: 125%;
+	font-weight: bold;
+	margin: 55px 55px 55px 55px;
+}
+
+/* visited link */
+a:visited {
+	color: purple;
+}
+/* mouse over link */
+a:hover {
+	color: red;
+}
+/* selected link */
+a:active {
+	color: yellow;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Personal Gift</title>
+</head>
+<body>
+	<h1>Personal Gifts</h1>
+	<a href="index.html">Back to option list</a>
+	<br />
+	<a href="viewAllPGiftsServlet">View all personal gifts given</a>
+	<form action="addPGiftServlet" method="post">
+	<br />
+		<h3>Gift Info</h3>
+		Date Given: <input type="date" name="dateGiven"> Please enter in YYYY-MM-DD format<br /> 
+		Description: <input type="text" name="description"><br /> 
+		Value: <input type="number" name="value"><br /> 
+		Occasion: <input type="text" name="occasion"><br />
+		<br />
+		<h3>Recipient Info</h3>
+		Name: <input type="text" name="name"><br /> 
+		Address: <input type="text" name="address"><br /> 
+		City: <input type="text" name="city"><br /> 
+		State: <input type="text" name="state"> Please enter 2 position alphanumeric abbreviation<br /> 
+		ZipCode: <input type="text" name="postalCode"><br /> 
+		BirthDate: <input type="date" name="birthDate"> Please enter in YYYY-MM-DD format<br /> 
+		Relationship: <input type="text" name="relationship"><br />
+		<br /> <input type="submit" value="Add Gift">
+	</form>
+</body>
+</html>
